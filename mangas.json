@@ -1,0 +1,16 @@
+{
+    "mangas": [
+        {
+            "titulo": "Chainsaw Man",
+            "volume": 12,
+            "preco": "22,10",
+            "imagem": ""
+        }, 
+        {
+            "titulo": "Vinland Saga",
+            "volume": 11,
+            "preco": "19,50",
+            "imagem": ""
+        }
+    ]
+}
