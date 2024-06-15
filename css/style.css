@@ -153,7 +153,7 @@ input[type="reset"] {
     .conteudo__lista {
         grid-template-columns: repeat(3, 1fr);
         padding: 0 24px 0 0;
-        height: 900px;
+        max-height: 900px;
         overflow-x: hidden;
         overflow-y: scroll;
     }
