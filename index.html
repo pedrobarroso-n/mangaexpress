@@ -7,9 +7,8 @@
     <link rel="shortcut icon" href="./image/mangaexpress-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
-    <script src="./js/script.js" defer></script>
 </head>
-<body onload="autoYear()">
+<body>
     <header class="cabecalho">
         <img src="./image/mangaexpress-logo.png" alt="Logo da MangaExpress" class="cabecalho__imagem">
         <p class="cabecalho__texto">MangaExpress</p>
@@ -19,7 +18,7 @@
         <form class="conteudo__formulario">
             <label>ADICIONAR MANGA:</label>
             <input type="text" name="titulo" id="titulo" placeholder="título">
-            <input type="number" name="volume" id="volume" placeholder="volume">
+            <input type="text" name="volume" id="volume" placeholder="volume">
             <input type="text" name="preco" id="preco" placeholder="preço">
             <input type="text" name="capa" id="capa" placeholder="capa">
             <div class="conteudo__formulario__botoes">
@@ -28,94 +27,8 @@
             </div>
         </form>
         <div class="conteudo__mangas">
-            <h2>
-                MEUS MANGA'S
-            </h2>
-            <div class="conteudo__lista" data-itens>
-                <div class="conteudo__lista__item">
-                    <img src="./image/chainsawman-12.png" alt="capa do manga Chainsaw Man volume 12">
-                    <div class="item__descricao">
-                        <p>Chainsaw Man</p>
-                        <p>vol.12</p>
-                    </div>
-                    <div class="item__descricao">
-                        <p>$ 22,10</p>
-                        <img src="./image/delete.png" alt="icone de remover manga da lista">
-                    </div>
-                </div>
-
-                <div class="conteudo__lista__item">
-                    <img src="./image/chainsawman-12.png" alt="capa do manga Chainsaw Man volume 12">
-                    <div class="item__descricao">
-                        <p>Chainsaw Man</p>
-                        <p>vol.12</p>
-                    </div>
-                    <div class="item__descricao">
-                        <p>$ 22,10</p>
-                        <img src="./image/delete.png" alt="icone de remover manga da lista">
-                    </div>
-                </div>
-
-                <div class="conteudo__lista__item">
-                    <img src="./image/vinlandsaga-11.png" alt="capa do manga Vinland Saga volume 11">
-                    <div class="item__descricao">
-                        <p>Vinland Saga</p>
-                        <p>vol.11</p>
-                    </div>
-                    <div class="item__descricao">
-                        <p>$ 19,50</p>
-                        <img src="./image/delete.png" alt="icone de remover manga da lista">
-                    </div>
-                </div>
-
-                <div class="conteudo__lista__item">
-                    <img src="./image/chainsawman-12.png" alt="capa do manga Chainsaw Man volume 12">
-                    <div class="item__descricao">
-                        <p>Chainsaw Man</p>
-                        <p>vol.12</p>
-                    </div>
-                    <div class="item__descricao">
-                        <p>$ 22,10</p>
-                        <img src="./image/delete.png" alt="icone de remover manga da lista">
-                    </div>
-                </div>
-
-                <div class="conteudo__lista__item">
-                    <img src="./image/chainsawman-12.png" alt="capa do manga Chainsaw Man volume 12">
-                    <div class="item__descricao">
-                        <p>Chainsaw Man</p>
-                        <p>vol.12</p>
-                    </div>
-                    <div class="item__descricao">
-                        <p>$ 22,10</p>
-                        <img src="./image/delete.png" alt="icone de remover manga da lista">
-                    </div>
-                </div>
-
-                <div class="conteudo__lista__item">
-                    <img src="./image/vinlandsaga-11.png" alt="capa do manga Vinland Saga volume 11">
-                    <div class="item__descricao">
-                        <p>Vinland Saga</p>
-                        <p>vol.11</p>
-                    </div>
-                    <div class="item__descricao">
-                        <p>$ 19,50</p>
-                        <img src="./image/delete.png" alt="icone de remover manga da lista">
-                    </div>
-                </div>
-
-                <div class="conteudo__lista__item">
-                    <img src="./image/chainsawman-12.png" alt="capa do manga Chainsaw Man volume 12">
-                    <div class="item__descricao">
-                        <p>Chainsaw Man</p>
-                        <p>vol.12</p>
-                    </div>
-                    <div class="item__descricao">
-                        <p>$ 22,10</p>
-                        <img src="./image/delete.png" alt="icone de remover manga da lista">
-                    </div>
-                </div>
-            </div>
+            <h2>MEUS MANGA'S</h2>
+            <div class="conteudo__lista" data-lista></div>
         </div>
     </main>
 
@@ -129,5 +42,8 @@
             <p>apoio alura latam -</p>
         </div>
     </footer>
+
+    <script type="module" src="./js/conectaApi.js"></script>
+    <script type="module" src="./js/main.js"></script>
 </body>
 </html>

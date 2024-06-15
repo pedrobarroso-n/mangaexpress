@@ -55,7 +55,7 @@ header {
     position: relative;
     margin-right: auto;
 }
-input[type="text"], input[type="number"] {
+input[type="text"] {
     width: 100%;
     padding: 16px;
     border: 3px solid var(--cor-terciaria);
@@ -124,6 +124,7 @@ input[type="reset"] {
     padding: 0 0 24px 0;
 }
 .conteudo__lista__item {
+    height: fit-content;
     width: fit-content;
     display: flex;
     flex-direction: column;
@@ -132,7 +133,7 @@ input[type="reset"] {
     border-radius: 10px;
     border: 3px solid var(--cor-terciaria);
     background-color: var(--cor-principal);
-    box-shadow: -6px 6px 5px rgba(0, 0, 0, 0.25); 
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25); 
 }
 .item__descricao {
     display: flex;
