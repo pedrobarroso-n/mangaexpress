@@ -115,7 +115,6 @@ input[type="reset"] {
     }
 }
 .conteudo__lista {
-    background-color: aua;
     margin: 0 15px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -124,8 +123,6 @@ input[type="reset"] {
     padding: 0 0 24px 0;
 }
 .conteudo__lista__item {
-    height: fit-content;
-    width: fit-content;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -142,6 +139,10 @@ input[type="reset"] {
     font-family: var(--fonte-usual);
     font-size: 15px;
     color: var(--cor-secundaria);
+}
+.item__capa {
+    height: 255px;
+    width: 176px;
 }
 
 @media (min-width: 1280px) {

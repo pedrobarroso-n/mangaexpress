@@ -6,7 +6,7 @@ async function constroiCard () {
     listaDeItens.innerHTML = ``;  //iniciar vazio
     conexao.forEach(element => listaDeItens.innerHTML += `
         <div class="conteudo__lista__item">
-        <img src="${element.capa}" alt="capa do manga ${element.titulo} volume ${element.volume}">
+        <img class="item__capa" src="${element.capa}" alt="capa do manga ${element.titulo} volume ${element.volume}">
         <div class="item__descricao">
         <p>${element.titulo}</p>
         <p>vol.${element.volume}</p>
