@@ -20,4 +20,16 @@ async function constroiCard () {
     
     return listaDeItens;
 }
-constroiCard();
+await constroiCard(); //await para carregar os botoes de exclusão
+
+function excluirManga() {
+    const btnExcluirmanga = document.querySelectorAll('.item__excluir');
+    btnExcluirmanga.forEach(manga => manga.addEventListener('click', async function() {
+        const conexao = await fetch(`http://localhost:3000/mangas/${manga.id}`, {
+            method: 'DELETE', 
+            headers: {"Content-type": "application/json"}
+        })
+        constroiCard();
+    }))
+}
+excluirManga()

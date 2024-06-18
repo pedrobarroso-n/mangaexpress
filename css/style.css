@@ -143,6 +143,7 @@ input[type="reset"] {
 .item__capa {
     height: 255px;
     width: 176px;
+    background-color: 6px;
 }
 
 @media (min-width: 1280px) {
