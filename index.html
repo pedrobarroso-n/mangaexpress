@@ -17,13 +17,13 @@
     <main class="conteudo">
         <form class="conteudo__formulario">
             <label>ADICIONAR MANGA:</label>
-            <input type="text" name="titulo" id="titulo" placeholder="título" required>
-            <input type="text" name="volume" id="volume" placeholder="volume" required>
-            <input type="text" name="preco" id="preco" placeholder="preço" required>
+            <input type="text" name="titulo" id="titulo" placeholder="título" required minlength="2">
+            <input type="text" name="volume" id="volume" placeholder="volume" required maxlength="4">
+            <input type="text" name="preco" id="preco" placeholder="preço" required minlength="4">
             <input type="text" name="capa" id="capa" placeholder="capa" required>
             <div class="conteudo__formulario__botoes">
-                <input type="submit" value="Adicionar">
-                <input type="reset" value="Cancelar">
+                <input type="submit" value="Adicionar" class="nao-clicavel">
+                <input type="reset" value="Cancelar" class="clicavel">
             </div>
         </form>
         <div class="conteudo__mangas">
