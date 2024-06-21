@@ -33,3 +33,5 @@ function excluirManga() {
     }))
 }
 excluirManga()
+
+console.log(document.getElementById('titulo'))

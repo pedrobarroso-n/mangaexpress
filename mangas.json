@@ -1,18 +1,18 @@
 {
   "mangas": [
     {
-      "id": 1,
       "titulo": "Chainsaw Man",
       "volume": "12",
       "preco": "22,90",
-      "capa": "https://github.com/pedrobarroso-n/api-tests/blob/main/api_for_manga-express/chainsawman-12.png?raw=true" 
+      "capa": "https://github.com/pedrobarroso-n/api-tests/blob/main/api_for_manga-express/chainsawman-12.png?raw=true",
+      "id": 1
     },
     {
-      "id": 2,
       "titulo": "Vinland Saga",
       "volume": "11",
       "preco": "19,50",
-      "capa": "https://github.com/pedrobarroso-n/api-tests/blob/main/api_for_manga-express/vinlandsaga-11.png?raw=true" 
+      "capa": "https://github.com/pedrobarroso-n/api-tests/blob/main/api_for_manga-express/vinlandsaga-11.png?raw=true",
+      "id": 2
     }
   ]
 }
