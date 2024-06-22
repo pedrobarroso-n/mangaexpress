@@ -1,2 +1,4 @@
-# ingnore os modulos dp node js
-node_modules
+# ingnore estes arquivos
+LICENSE
+package-lock.json
+package.json
