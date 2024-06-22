@@ -5,14 +5,21 @@
       "volume": "12",
       "preco": "22,90",
       "capa": "https://github.com/pedrobarroso-n/api-tests/blob/main/api_for_manga-express/chainsawman-12.png?raw=true",
-      "id": 1
+      "id": "1"
     },
     {
       "titulo": "Vinland Saga",
       "volume": "11",
       "preco": "19,50",
       "capa": "https://github.com/pedrobarroso-n/api-tests/blob/main/api_for_manga-express/vinlandsaga-11.png?raw=true",
-      "id": 2
+      "id": "2"
+    },
+    {
+      "titulo": "Attack on Titan",
+      "volume": "1",
+      "preco": "24,90",
+      "capa": "https://github.com/pedrobarroso-n/api-tests/blob/main/api_for_manga-express/attackontitan-1.png?raw=true",
+      "id": "3"
     }
   ]
 }

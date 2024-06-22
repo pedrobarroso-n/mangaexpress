@@ -1,5 +1,6 @@
 import conectaApi from './conectaApi.js'
 const listaDeItens = document.querySelector('[data-lista]');
+const btnAdiconarManga = document.getElementById('adicionar');
 
 async function constroiCard () {
     const conexao = await conectaApi();
@@ -17,21 +18,36 @@ async function constroiCard () {
         </div>
         </div>`
     )
-    
     return listaDeItens;
 }
 await constroiCard(); //await para carregar os botoes de exclusão
 
 function excluirManga() {
-    const btnExcluirmanga = document.querySelectorAll('.item__excluir');
-    btnExcluirmanga.forEach(manga => manga.addEventListener('click', async function() {
+    const btnExcluirManga = document.querySelectorAll('.item__excluir');
+    btnExcluirManga.forEach(manga => manga.addEventListener('click', async function() {
         const conexao = await fetch(`http://localhost:3000/mangas/${manga.id}`, {
             method: 'DELETE', 
             headers: {"Content-type": "application/json"}
         })
-        constroiCard();
+        return constroiCard();
     }))
 }
 excluirManga()
 
-console.log(document.getElementById('titulo'))
+const adicionarManga = async function() {
+    const titulo = document.getElementById('titulo').value;
+    const volume = document.getElementById('volume').value;
+    const preco = document.getElementById('preco').value;
+    const capa = document.getElementById('capa').value;
+    const conexao = await fetch('http://localhost:3000/mangas', {
+        method: 'POST',
+        headers: {"Content-type": "application/json"},
+        body: JSON.stringify({
+            'titulo': titulo,
+            'volume': volume,
+            'preco': preco,
+            'capa': capa
+        })
+    })
+}
+btnAdiconarManga.addEventListener("click", adicionarManga)

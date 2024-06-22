@@ -3,7 +3,6 @@
 :root { 
     --cor-principal: #E95D44; 
     --cor-secundaria: #FFFFFF;
-    --cor-princiapal-apagada: #e95d44e8;
     --cor-terciaria: rgba(0 ,0, 0, 0.82);
     --fonte-destaque: "Poller One", serif;
     --fonte-usual: "Piazzolla", serif;
@@ -84,6 +83,7 @@ input[type="text"] {
     padding: 12px;
     border-radius: 30px;
     font-size: 1em;
+    cursor: pointer;
 
     &[type="reset"] {
         border: 3px solid var(--cor-principal);
@@ -95,16 +95,10 @@ input[type="text"] {
         background-color: var(--cor-principal);
         color: var(--cor-secundaria);
     }
-}
-.clicavel{
-    cursor: pointer;
     &:hover {
         filter: brightness(90%);
         font-size: 0.96em;
     }
-}
-.nao-clicavel {
-    filter: contrast(76%);
 }
 
 .conteudo__mangas {
